@@ -8,7 +8,7 @@
 }
 
 body {
-    /* height: 100vh; */
+    margin: 0px;
 }
 
 #dark-banner {
@@ -44,28 +44,40 @@ body {
 
 #form-container {
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-form {
-    position: relative;
-    right: 40px;
+#right-side>form {
+    /* position: relative;
+    right: 40px; */
+    padding:0px;
+    
+}
+
+input {
+    border: 3px solid transparent;
+    width: 220px;
+}
+
+input:focus {
+    border: 3px solid rgba(72, 255, 0, 0.5);
 }
 
 fieldset {
     width: 100%;
-    background-color: aliceblue;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.5);
+    background-color: whitesmoke;
 }
 
 #form-container>p {
-    flex-basis: 50%;
-    position: relative;
-    /* need to think about all this. */
-    /* left: 40px; */
-    /* width: 60%; */
+    flex-basis: 30%;
+
 }
 
 #left-side {
-    /* flex-basis: 40%; */
     flex: 1 1 0;
     background-image: url(resources/images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
@@ -73,12 +85,18 @@ fieldset {
 
 #right-side {
     flex: 2 1 0;
-    padding: 40px;
-    padding-right: 8%;
-    padding-top: 10%;
-    background-color: gainsboro;
+    background-color: rgba(145, 67, 46, 0.463);
+}
+
+#right-side>* {
+    padding: 10px 30px;
 }
 
 button {
     margin: 50px;
+    background-color: #6b945cdc;
+    color: whitesmoke;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
 }

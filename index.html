@@ -25,30 +25,31 @@
             <form>
                 <fieldset>
                     <h2>Let's do this!</h2>
+                    <p>Note: Required fields are marked by a red asterisk. <span style="color:red">*</span></p>
                     <div id="form-container" class="flex-container">
                         <p>
                             <label for="first-name">First Name</label><br>
                             <input type="text" id="first-name" name="first-name">
                         </p>
                         <p>
-                            <label for="last-name">Last Name</label><br>
-                            <input type="text" id="last-name" name="last-name">
+                            <label for="last-name">Last Name <span style="color:red">*</span></label><br>
+                            <input type="text" id="last-name" name="last-name" required>
                         </p>
                         <p>
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email">
+                            <label for="email">Email <span style="color:red">*</span></label><br>
+                            <input type="email" id="email" name="email" required>
                         </p>
                         <p>
                             <label for="phone">Phone</label><br>
                             <input type="tel" id="phone" name="phone">
                         </p>
                         <p>
-                            <label for="password">Password</label><br>
-                            <input type="password" id="password" name="password">
+                            <label for="password">Password <span style="color:red">*</span></label><br>
+                            <input type="password" id="password" name="password" pattern="[\w]{8}[\w]*" title="Enter at least 8 characters" required>
                         </p>
                         <p>
-                            <label for="confirm-password">Confirm Password</label><br>
-                            <input type="text" id="confirm-password" name="confirm-password">
+                            <label for="confirm-password">Confirm Password <span style="color:red">*</span></label><br>
+                            <input type="text" id="confirm-password" name="confirm-password" pattern="[\w]{8}[\w]*" title="Enter at least 8 characters" required>
                         </p>
                     </div>
                 </fieldset>
