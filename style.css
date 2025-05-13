@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('resources/fonts/KaushanScript-Regular.woff2') format('woff2'),
+        url('resources/fonts/KaushanScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    /* height: 100vh; */
+}
+
+#dark-banner {
+    background-color: rgb(0, 0, 0, 0.5);
+    position: relative;
+    top:30%;
+    height: 120px;
+    text-align: center;
+}
+
+#logo {
+    font-family: 'Kaushan Script';
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2em;
+}
+
+#logo>* {
+    align-content: center;
+    /* flex: 1 1 0; */
+} 
+
+.flex-container {
+    display: flex;
+}
+
+#main-container {
+    height: 100vh;
+    align-items: stretch;
+}
+
+#form-container {
+    flex-wrap: wrap;
+}
+
+form {
+    position: relative;
+    right: 40px;
+}
+
+fieldset {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#form-container>p {
+    flex-basis: 50%;
+    position: relative;
+    /* need to think about all this. */
+    /* left: 40px; */
+    /* width: 60%; */
+}
+
+#left-side {
+    /* flex-basis: 40%; */
+    flex: 1 1 0;
+    background-image: url(resources/images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+#right-side {
+    flex: 2 1 0;
+    padding: 40px;
+    padding-right: 8%;
+    padding-top: 10%;
+    background-color: gainsboro;
+}
+
+button {
+    margin: 50px;
+}
